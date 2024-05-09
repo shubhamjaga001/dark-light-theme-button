@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" id="body">
+<head>
+<style>
+body{
+justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 200px;
+      }
+#dark_btn{
+	height: 40px;
+    width: 150px;
+    font-size: 30px;
+    background: blue;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 3px gray;
+    border: 2px solid #fff;
+    font-family: serif;
+    
+   
+}
+</style>
+</head>
+<body id="body">
+  
+ <button id="dark_btn">Dark</button>
+      
+<script>
+  let callFunction = document.getElementById("dark_btn");
+callFunction.onclick = function dark(){
+  let bodySelect = document.getElementById("body");
+  let buttonSelect = document.getElementById("dark_btn");
+  buttonSelect.innerHTML;
+  
+  if(buttonSelect.innerHTML == "Dark"){
+    bodySelect.style.background = "#1F2937";
+    buttonSelect.innerHTML = "Light";
+  }
+  
+  else{
+    bodySelect.style.background = "white";
+    buttonSelect.innerHTML = "Dark";
+  }
+}
+</script>
+</body>
+</html>
